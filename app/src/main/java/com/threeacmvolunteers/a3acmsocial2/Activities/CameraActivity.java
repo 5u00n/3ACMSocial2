@@ -1,42 +1,53 @@
 package com.threeacmvolunteers.a3acmsocial2.Activities;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.media.CamcorderProfile;
 import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.threeacmvolunteers.a3acmsocial2.R;
 
-public class UploadVideo extends AppCompatActivity {
+import static java.security.AccessController.getContext;
 
+
+public class CameraActivity extends AppCompatActivity {
     VideoView mVideoView;
     MediaController mdc;
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.upload_status_layout);
-        mVideoView = (VideoView) findViewById(R.id.video_player_upload);
+
+        setContentView(R.layout.camera_layout);
+        mVideoView = (VideoView) findViewById(R.id.id_video);
         mdc= new MediaController(this);
         mVideoView.setMediaController(mdc);
-
         Intent takeVideoIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
         if (takeVideoIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takeVideoIntent, 1);
         }
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode ==1 && resultCode == RESULT_OK) {
             Uri videoUri = intent.getData();
-            mVideoView.setVideoURI(videoUri);
-              mVideoView.setOnCompletionListener(myVideoViewCompletionListener);
-              mVideoView.setOnPreparedListener(MyVideoViewPreparedListener);
+           mVideoView.setVideoURI(videoUri);
+         //   mVideoView.setOnCompletionListener(myVideoViewCompletionListener);
+         //   mVideoView.setOnPreparedListener(MyVideoViewPreparedListener);
 
             mVideoView.requestFocus();
             mVideoView.start();
@@ -65,6 +76,5 @@ public class UploadVideo extends AppCompatActivity {
 
                 }
             };
-
 
 }
