@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/id_login_header_text"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Please choose LOGIN"/>
+
+        <Button
+            android:id="@+id/id_login_google_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp" 
+            android:text="google"/>
+
+        <Button
+            android:id="@+id/id_login_email_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Email"/>
+        <Button
+            android:id="@+id/id_login_phone_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Phone"/>
+    </LinearLayout>
+
+</RelativeLayout>

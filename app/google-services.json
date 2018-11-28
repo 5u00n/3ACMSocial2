@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1088122111675",
+    "firebase_url": "https://acmsocial2.firebaseio.com",
+    "project_id": "acmsocial2",
+    "storage_bucket": "acmsocial2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088122111675:android:138d8ccc0899d4af",
+        "android_client_info": {
+          "package_name": "com.threeacmvolunteers.a3acmsocial2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088122111675-o2oidg5cimav4oh6ks93se6cd3qh4p36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.threeacmvolunteers.a3acmsocial2",
+            "certificate_hash": "b4b94535c56c877f4036b0a8bf5130754a811a6a"
+          }
+        },
+        {
+          "client_id": "1088122111675-q7q73oc81lrqvakm3sqk1vtqog47ujs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2k3YUU3-JZUH5CQpTl-XBBdEODLhc7qM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088122111675-q7q73oc81lrqvakm3sqk1vtqog47ujs6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

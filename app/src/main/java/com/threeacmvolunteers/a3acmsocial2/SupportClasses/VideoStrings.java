@@ -1,17 +1,19 @@
 package com.threeacmvolunteers.a3acmsocial2.SupportClasses;
 
 public class VideoStrings {
-    String id,name,title,by,disription,tags,date,time;
+    String id,name,title,by,discription,tags,date,time,src;
 
-    public VideoStrings(String id, String name, String title, String by, String disription, String tags, String date, String time) {
+    public VideoStrings(String id, String name, String title, String by, String discription, String tags, String date, String time,String src) {
         this.id = id;
         this.name = name;
         this.title = title;
         this.by = by;
-        this.disription = disription;
+        this.discription = discription;
         this.tags = tags;
         this.date = date;
         this.time = time;
+        this.src= src;
+
     }
 
     public String getId() {
@@ -30,8 +32,8 @@ public class VideoStrings {
         return by;
     }
 
-    public String getDisription() {
-        return disription;
+    public String getDiscription() {
+        return discription;
     }
 
     public String getTags() {
@@ -44,5 +46,9 @@ public class VideoStrings {
 
     public String getTime() {
         return time;
+    }
+
+    public String getSrc() {
+        return src;
     }
 }

@@ -1,26 +1,17 @@
 package com.threeacmvolunteers.a3acmsocial2.Activities;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.media.CamcorderProfile;
 import android.media.MediaPlayer;
-import android.media.MediaRecorder;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
+
 import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.threeacmvolunteers.a3acmsocial2.R;
-
-import static java.security.AccessController.getContext;
-
 
 public class CameraActivity extends AppCompatActivity {
     VideoView mVideoView;

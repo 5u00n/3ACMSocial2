@@ -2,4 +2,7 @@
     <string name="app_name">3ACMSocial2</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="permission_message">This will let use your device function to run the app.</string>
+    <string name="facebook_app_id">302984730303755</string>
+    <string name="fb_login_protocol_scheme">fb302984730303755</string>
 </resources>

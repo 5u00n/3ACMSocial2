@@ -1,73 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|bottom|center|right|left">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/upload_videoLay"
+        android:layout_width="match_parent"
+        android:padding="13dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/id_upload_video_button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/ic_media_play" />
 
     <FrameLayout
         android:id="@+id/frame_upload"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="200dp">
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="400dp">
 
         <VideoView
             android:id="@+id/video_player_upload"
-            android:layout_width="match_parent"
-
+            android:layout_width="223dp"
             android:layout_height="match_parent"
             android:layout_gravity="center" />
-
-
     </FrameLayout>
-    <RelativeLayout
-        android:layout_below="@+id/frame_upload"
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
+    </android.support.design.widget.CoordinatorLayout>
 
-    </RelativeLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+    <LinearLayout
+        android:layout_below="@+id/upload_videoLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="99dp"
-        android:ems="10"
-        android:hint="Tags to all users"
-        android:inputType="textPersonName" />
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_uploadpage_etext_name"
+            android:hint="Name of the video"
+            android:inputType=""
+            android:autofillHints="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_uploadpage_etext_title"
+            android:hint="Title that you wanmt to appear"
+            android:autofillHints=""
+            android:inputType="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_uploadpage_etext_tags"
+            android:hint="tags"
+            android:autofillHints=""
+            android:inputType="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_uploadpage_etext_discription"
+            android:hint="Discription"
+            android:autofillHints=""
+            android:inputType="" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="31dp"
-        android:text="UPLOAD" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPload"
+            android:id="@+id/id_uploadpage_button_upload"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+           />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/videoframe"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="161dp"
-        android:layout_marginBottom="162dp"
-        android:text="Tags" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
