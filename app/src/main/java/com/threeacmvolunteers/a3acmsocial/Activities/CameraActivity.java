@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.Activities;
+package com.threeacmvolunteers.a3acmsocial.Activities;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -11,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import com.threeacmvolunteers.a3acmsocial2.R;
+import com.threeacmvolunteers.a3acmsocial.R;
 
 public class CameraActivity extends AppCompatActivity {
     VideoView mVideoView;

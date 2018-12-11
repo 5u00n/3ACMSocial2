@@ -1,14 +1,14 @@
-package com.threeacmvolunteers.a3acmsocial2.SupportClasses;
+package com.threeacmvolunteers.a3acmsocial.SupportClasses;
 
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.threeacmvolunteers.a3acmsocial2.Frags.ProfileFragment;
-import com.threeacmvolunteers.a3acmsocial2.Frags.SearchFragment;
-import com.threeacmvolunteers.a3acmsocial2.Frags.ViewFragment;
-import com.threeacmvolunteers.a3acmsocial2.MainActivity;
+import com.threeacmvolunteers.a3acmsocial.Frags.ProfileFragment;
+import com.threeacmvolunteers.a3acmsocial.Frags.SearchFragment;
+import com.threeacmvolunteers.a3acmsocial.Frags.ViewFragment;
+import com.threeacmvolunteers.a3acmsocial.MainActivity;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
      int pos=0;

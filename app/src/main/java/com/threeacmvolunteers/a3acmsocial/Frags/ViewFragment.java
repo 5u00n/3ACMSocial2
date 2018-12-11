@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.Frags;
+package com.threeacmvolunteers.a3acmsocial.Frags;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.threeacmvolunteers.a3acmsocial2.R;
+import com.threeacmvolunteers.a3acmsocial.R;
 
  public class ViewFragment extends Fragment {
 

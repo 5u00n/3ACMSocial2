@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2;
+package com.threeacmvolunteers.a3acmsocial;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

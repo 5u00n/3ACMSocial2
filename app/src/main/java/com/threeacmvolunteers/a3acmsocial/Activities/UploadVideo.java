@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.Activities;
+package com.threeacmvolunteers.a3acmsocial.Activities;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -23,7 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.threeacmvolunteers.a3acmsocial2.R;
+import com.threeacmvolunteers.a3acmsocial.R;
 
 import java.io.File;
 

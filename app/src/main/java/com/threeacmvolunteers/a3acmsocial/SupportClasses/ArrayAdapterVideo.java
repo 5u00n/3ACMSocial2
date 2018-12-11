@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.SupportClasses;
+package com.threeacmvolunteers.a3acmsocial.SupportClasses;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.threeacmvolunteers.a3acmsocial2.R;
+import com.threeacmvolunteers.a3acmsocial.R;
 
 import java.util.List;
 

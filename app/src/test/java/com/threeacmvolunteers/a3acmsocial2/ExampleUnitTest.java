@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2;
+package com.threeacmvolunteers.a3acmsocial;
 
 import org.junit.Test;
 

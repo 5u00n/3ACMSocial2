@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.SupportClasses;
+package com.threeacmvolunteers.a3acmsocial.SupportClasses;
 
 import android.Manifest;
 import android.app.Activity;

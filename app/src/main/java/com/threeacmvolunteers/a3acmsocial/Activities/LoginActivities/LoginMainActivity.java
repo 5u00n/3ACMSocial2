@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.Activities.LoginActivities;
+package com.threeacmvolunteers.a3acmsocial.Activities.LoginActivities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,14 +33,14 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
-import com.threeacmvolunteers.a3acmsocial2.R;
-import com.threeacmvolunteers.a3acmsocial2.SupportClasses.PermissionGrantHelper;
+import com.threeacmvolunteers.a3acmsocial.R;
+import com.threeacmvolunteers.a3acmsocial.SupportClasses.PermissionGrantHelper;
 
 import java.util.Arrays;
 
-import static com.threeacmvolunteers.a3acmsocial2.SupportClasses.PermissionGrantHelper.isCameraPermissionGranted;
-import static com.threeacmvolunteers.a3acmsocial2.SupportClasses.PermissionGrantHelper.isReadStoragePermissionGranted;
-import static com.threeacmvolunteers.a3acmsocial2.SupportClasses.PermissionGrantHelper.isRecordAudioPermissionGranted;
+import static com.threeacmvolunteers.a3acmsocial.SupportClasses.PermissionGrantHelper.isCameraPermissionGranted;
+import static com.threeacmvolunteers.a3acmsocial.SupportClasses.PermissionGrantHelper.isReadStoragePermissionGranted;
+import static com.threeacmvolunteers.a3acmsocial.SupportClasses.PermissionGrantHelper.isRecordAudioPermissionGranted;
 
 public class LoginMainActivity extends AppCompatActivity {
 
@@ -91,15 +91,10 @@ public class LoginMainActivity extends AppCompatActivity {
 
         //Initialize objects
         googleButton = (Button) findViewById(R.id.id_login_google_button);
-        facebookButton = (Button) findViewById(R.id.id_login_facebook_button);
         emailButton = (Button) findViewById(R.id.id_login_email_button);
-        phoneButton = (Button) findViewById(R.id.id_login_phone_button);
-
 
 
         //assigning button listner
-        googleButton.setOnClickListener(googleLogin);
-        facebookButton.setOnClickListener(facebookLogin);
 
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -111,33 +106,12 @@ public class LoginMainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-
-
-
-
-        loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setOnClickListener(facebookLogin);
-        loginButton.setReadPermissions(Arrays.asList(EMAIL));
-        // If you are using in a fragment, call loginButton.setFragment(this);
-
-        // Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                // App code
-            }
-
-            @Override
-            public void onCancel() {
-                // App code
-            }
-
-            @Override
-            public void onError(FacebookException exception) {
-                // App code
-            }
-        });
     }
+
+
+
+
+
 
     View.OnClickListener googleLogin = new View.OnClickListener() {
         @Override

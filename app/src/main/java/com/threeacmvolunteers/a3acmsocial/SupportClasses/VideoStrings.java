@@ -1,4 +1,4 @@
-package com.threeacmvolunteers.a3acmsocial2.SupportClasses;
+package com.threeacmvolunteers.a3acmsocial.SupportClasses;
 
 public class VideoStrings {
     String id,name,title,by,discription,tags,date,time,src;
